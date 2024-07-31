@@ -21,3 +21,4 @@ const RestaurentCard=(props)=>{
   }
 
   export default RestaurentCard;
+  

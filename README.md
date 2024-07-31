@@ -41,3 +41,14 @@
 Normal js utility functions
 -useState()-Superpowerful variable in react
 -useEffect()
+
+
+
+
+epsisode--6
+Microservices
+live data api--fetch(api),cors extension
+search functionality
+login logout
+shimmer ui
+DOM manipuation
