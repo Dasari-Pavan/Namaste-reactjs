@@ -12,7 +12,7 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
     background-color: lightcyan;
     width:100%;
     height: auto;
-    position:fixed;
+    /* position:fixed; */
 }
 
 .logo>img{
@@ -55,7 +55,7 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
 
 
 .filter-btn,.search{
-    margin-top:150px;
+    margin-top:15px;
     margin-right: 20px;
     margin-left: 40px;
     cursor:pointer;
@@ -73,7 +73,7 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
     flex-wrap: wrap;
     gap:10px 60PX;
     margin:100px 20px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     /* margin-top: 100px;    */
 }
 .res-card{

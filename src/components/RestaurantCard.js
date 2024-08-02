@@ -1,6 +1,6 @@
 import {RES_URL} from "../utils/constants"
 
-const RestaurentCard=(props)=>{
+const RestaurantCard=(props)=>{
     const {resData} =props;
   
     const {name,cuisines,avgRating,costForTwo,deliveryTime,cloudinaryImageId}=resData?.info;
@@ -20,5 +20,5 @@ const RestaurentCard=(props)=>{
     )
   }
 
-  export default RestaurentCard;
+  export default RestaurantCard;
   

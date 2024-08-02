@@ -1,8 +1,8 @@
 // import resList from "../utils/mockData";
-import RestaurentCard from "./RestaurantCard";
+import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
 // import resList from "../utils/mockData";
-import Shimmer from "./Shimmer";
+// import Shimmer from "./Shimmer";
 
 const Body=()=>{
 
@@ -33,8 +33,8 @@ const[searchtext,setsearchtext]=useState();
         
         console.log(json);
         // optional chaining
-        setlistofRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-        setfilteredRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setlistofRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setfilteredRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
     
     return(
@@ -69,8 +69,8 @@ const[searchtext,setsearchtext]=useState();
         </button>
       </div>
       <div className="res-container">
-        {filteredRestaurant.map((restaurant)=>(
-          <RestaurentCard key={restaurant.info.id} resData={restaurant}/>
+        {filteredRestaurant.map((restaurants)=>(
+          <RestaurantCard key={restaurants.info.id} resData={restaurants}/>
         ))}
         
         </div>
