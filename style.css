@@ -1,7 +1,7 @@
 body{
     background: #C9D6FF;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);  Chrome 10-25, Safari 5.1-6 */
+/* background: linear-gradient(to right, #E2E2E2, #C9D6FF); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -79,7 +79,8 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
 .res-card{
     padding: 5px;
     width:290px;
-    /* height: 420px; */
+    margin-bottom:40px;
+
     border:1px solid black;
     border-radius: 5px;
     /* overflow: scroll; */
@@ -94,3 +95,12 @@ background: linear-gradient(to right, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, F
 .res-logo{
     width: 100%;
 }
+
+.user-card{
+    padding: 10px;;
+    border: 1px solid black;
+}
+
+/* button{
+    background-color: blue;
+} */

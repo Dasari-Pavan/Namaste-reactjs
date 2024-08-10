@@ -3,6 +3,7 @@ import RestaurantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
 // import resList from "../utils/mockData";
 // import Shimmer from "./Shimmer";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body=()=>{
 
@@ -21,10 +22,10 @@ const[searchtext,setsearchtext]=useState();
     
 
 // shimmer or Conditional rendering
-// if(listofRestaurants.lenght === 0)
-// {
-//     return <Shimmer/>
-// }
+if(listofRestaurants.lenght === 0)
+{
+    return <Shimmer/>
+}
 
     const fetchData=async()=>{
         const data=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.67740&lng=83.20360&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
@@ -33,10 +34,18 @@ const[searchtext,setsearchtext]=useState();
         
         console.log(json);
         // optional chaining
-        setlistofRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
-        setfilteredRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setlistofRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+        setfilteredRestaurant(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     };
-    
+
+const OnlineStatus=useOnlineStatus();
+if(OnlineStatus==false)
+  return(
+  <h1>hjkk</h1>
+  );
+  
+
+
     return(
     <div className="body">
       <div className="filter">

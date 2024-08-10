@@ -18,11 +18,13 @@
   },
   "homepage": "https://github.com/Dasari-Pavan/Reactjs#readme",
   "devDependencies": {
-    "parcel": "^2.11.0",
+    "@parcel/transformer-typescript-tsc": "^2.12.0",
+    "parcel": "^2.12.0",
     "process": "^0.11.10"
   },
   "dependencies": {
-    "react": "^18.2.0",
+    "@parcel/core": "^2.12.0",
+    "react": "^18.3.1",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.25.1"
   },
